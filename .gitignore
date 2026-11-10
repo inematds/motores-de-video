@@ -1,0 +1,5 @@
+__pycache__/
+*.tmp
+guia/assets/*.codex.log
+.DS_Store
+regras.locais.json

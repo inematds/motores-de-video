@@ -1,0 +1,945 @@
+{
+  "gerado_em": "2026-11-09",
+  "fonte_exemplos": "histórico de publicações do yt-pubx (só vídeos públicos, não reconferidos no ar)",
+  "canais": {
+    "lives1": {
+      "nome": "INEMA TDS",
+      "url": "https://www.youtube.com/@inematdsx"
+    },
+    "lives2": {
+      "nome": "INEMA TIA",
+      "url": "https://www.youtube.com/@InemaTIA"
+    },
+    "lives3": {
+      "nome": "INEMA FTD",
+      "url": "https://www.youtube.com/@INEMAFTD"
+    },
+    "lives4": {
+      "nome": "INEMA Tec",
+      "url": "https://www.youtube.com/@inematec"
+    },
+    "lives6": {
+      "nome": "INEMA Robot",
+      "url": "https://www.youtube.com/channel/UCZ5fAkd2Z9PB3sHKbRKEYeQ"
+    },
+    "lives7": {
+      "nome": "INEMA LOOPY",
+      "url": "https://www.youtube.com/channel/UCKBiylp-fueqbKiq7FqrM6g"
+    },
+    "lives8": {
+      "nome": "Inema Vibe",
+      "url": "https://www.youtube.com/channel/UCJxL11aomXJiBZga-JXylgQ"
+    },
+    "lives10": {
+      "nome": "Eventos Extremos INEMA",
+      "url": "https://www.youtube.com/@eventosextremos-inema"
+    },
+    "lives11": {
+      "nome": "INEMA Futuros",
+      "url": "https://www.youtube.com/channel/UCx3T2Ltl8-gsiIytjNZ306w"
+    },
+    "lives12": {
+      "nome": "Saúde Diária",
+      "url": "https://www.youtube.com/@InemaPro"
+    },
+    "lives24": {
+      "nome": "Inema Club24",
+      "url": "https://www.youtube.com/channel/UC3vxpzIJyPl2WraCBCZ07JA"
+    },
+    "aventuras": {
+      "nome": "Aventuras INEMA",
+      "url": "https://www.youtube.com/@aventurasinema"
+    },
+    "espanhol": {
+      "nome": "Inema Espanhol",
+      "url": "https://www.youtube.com/@inemaespanhol"
+    }
+  },
+  "grupos": [
+    {
+      "id": "explicativos",
+      "nome": "Explicativos com avatar"
+    },
+    {
+      "id": "reels",
+      "nome": "Reels virais 9:16"
+    },
+    {
+      "id": "radares",
+      "nome": "Radares diários automáticos"
+    },
+    {
+      "id": "automaticos",
+      "nome": "Outras linhas automáticas"
+    },
+    {
+      "id": "codigo",
+      "nome": "Vídeo feito em código (sem câmera)"
+    },
+    {
+      "id": "apoio",
+      "nome": "Apoio"
+    }
+  ],
+  "motores": [
+    {
+      "id": "explicavideos",
+      "grupo": "explicativos",
+      "emoji": "🎬",
+      "nome": "explicavideos (explicavideo)",
+      "oque": "Motor base dos vídeos explicativos: o roteiro vira cenas com ilustrações, capítulos e legenda, e o avatar do Nei fala o texto. Tem um perfil viral, com gancho na abertura e imagens de impacto.",
+      "serve": "Explicar um assunto, uma ferramenta ou um projeto do INEMA, do vídeo longo ao corte curto.",
+      "formato": "16:9 e 9:16",
+      "avatar": "Sim — avatar e voz do Nei pelo estúdio HeyGen (há versão sem avatar, com voz local)",
+      "acionamento": "Terminal (sessão com o agente) ou bot: /explicavideo <assunto> no inemaccbot",
+      "repo": "https://github.com/inematds/explicavideos",
+      "exemplos": [
+        {
+          "video_id": "cgZSgxjXaWs",
+          "url": "https://www.youtube.com/watch?v=cgZSgxjXaWs",
+          "titulo": "Esqueça todas as IAs: chegou o novo rei — Claude Fable 5.2 nos números: custo, esforço #shorts",
+          "canal": "lives4",
+          "canal_nome": "INEMA Tec",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "lA9BHfoVZDo",
+          "url": "https://www.youtube.com/watch?v=lA9BHfoVZDo",
+          "titulo": "Seu time de bots pela assinatura que você já paga: 193 de 193 testes, sem API (kit grátis)",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-09",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "FSf-jUT_n6U",
+          "url": "https://www.youtube.com/watch?v=FSf-jUT_n6U",
+          "titulo": "Do chat ao agente em 4 degraus: aprenda do zero, ainda em 2026, sem programar #shorts",
+          "canal": "lives1",
+          "canal_nome": "INEMA TDS",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "refazvideo",
+      "grupo": "explicativos",
+      "emoji": "🔁",
+      "nome": "refazvideo",
+      "oque": "Passo a passo para um agente de IA refazer um vídeo de referência como explicativo próprio, em português: baixa, transcreve, escreve um roteiro novo, mostra uma prévia e só gera o avatar depois do \"pode fazer\".",
+      "serve": "Explicar em português um assunto que apareceu num bom vídeo, sem gravar a si mesmo.",
+      "formato": "16:9 e 9:16",
+      "avatar": "Sim — avatar e voz do Nei (HeyGen); renderiza no explicavideos",
+      "acionamento": "Terminal (sessão com o agente), com prévia e OK antes do avatar",
+      "repo": "https://github.com/inematds/refazvideo",
+      "exemplos": [
+        {
+          "video_id": "ZsnxZmxcOSQ",
+          "url": "https://www.youtube.com/watch?v=ZsnxZmxcOSQ",
+          "titulo": "IA sem censura: como funciona, onde usar e quanto custa",
+          "canal": "lives4",
+          "canal_nome": "INEMA Tec",
+          "data": "2026-11-09",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "bnLvmYcP4PI",
+          "url": "https://www.youtube.com/watch?v=bnLvmYcP4PI",
+          "titulo": "Como criar agentes de IA que aprendem com os próprios erros",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-08",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "WizdRuVKl1U",
+          "url": "https://www.youtube.com/watch?v=WizdRuVKl1U",
+          "titulo": "MovieFlow: uma frase vira um filme (13 modelos de IA) #shorts",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "r7exp",
+      "grupo": "explicativos",
+      "emoji": "🗺️",
+      "nome": "r7exp",
+      "oque": "Explicativo visual que ensina opções: um gráfico que funciona como mapa, a mesma pessoa atravessando cada cenário, painéis que entram na palavra falada e, no fim, o que você pode fazer.",
+      "serve": "Temas com caminhos ou cenários (\"qual futuro\", \"qual escolha\"), em que cada opção precisa ser explicada.",
+      "formato": "16:9 completo + um reel 9:16 por opção",
+      "avatar": "Sim — avatar do Nei (meia tela no começo, depois no canto)",
+      "acionamento": "Terminal (sessão com o agente); motor ainda em protótipo",
+      "repo": "https://github.com/inematds/r7exp",
+      "exemplos": [
+        {
+          "video_id": "0aE_BstdJkY",
+          "url": "https://www.youtube.com/watch?v=0aE_BstdJkY",
+          "titulo": "A IA descobre. E você? #shorts",
+          "canal": "lives11",
+          "canal_nome": "INEMA Futuros",
+          "data": "2026-11-04",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "PJIsN8MMHVE",
+          "url": "https://www.youtube.com/watch?v=PJIsN8MMHVE",
+          "titulo": "A IA resolveu 100 anos de ciência? As 3 descobertas explicadas no mapa",
+          "canal": "lives11",
+          "canal_nome": "INEMA Futuros",
+          "data": "2026-10-29",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "YkqpuErgrqE",
+          "url": "https://www.youtube.com/watch?v=YkqpuErgrqE",
+          "titulo": "PHP2Shell: seu site está exposto? Veja como se proteger",
+          "canal": "lives1",
+          "canal_nome": "INEMA TDS",
+          "data": "2026-10-23",
+          "formato": "16:9"
+        }
+      ]
+    },
+    {
+      "id": "r7ex",
+      "grupo": "reels",
+      "emoji": "⚡",
+      "nome": "r7ex",
+      "oque": "Linha de produção de reels com roteiro de 7 etapas de gatilho, do gancho com número ao pedido de comentário, e acabamento de telejornal: título desenhado na abertura, painéis no tempo da fala, contador e legenda que acende com a voz.",
+      "serve": "Reel viral de 40 a 50 segundos a partir de uma tese ou opinião forte.",
+      "formato": "9:16",
+      "avatar": "Sim — Nei em meia tela no gancho, depois no canto (HeyGen)",
+      "acionamento": "Terminal (/r7ex) ou bot: /r7ex <tema> no inemaccbot; publicação por fila com timer",
+      "repo": "https://github.com/inematds/r7ex",
+      "exemplos": [
+        {
+          "video_id": "9xtleXd3Kaw",
+          "url": "https://www.youtube.com/watch?v=9xtleXd3Kaw",
+          "titulo": "Para de criar app de IA: os 13 negócios com IA do pior ao melhor #shorts",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-08",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "CxjmcmF-GWg",
+          "url": "https://www.youtube.com/watch?v=CxjmcmF-GWg",
+          "titulo": "Seu prompt não é cadeado: 5 travas para o agente de IA #shorts",
+          "canal": "lives4",
+          "canal_nome": "INEMA Tec",
+          "data": "2026-11-08",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "0VdykM91Gzw",
+          "url": "https://www.youtube.com/watch?v=0VdykM91Gzw",
+          "titulo": "Ex-chefe do Google avisa: NÃO estamos prontos para a IA #shorts",
+          "canal": "lives11",
+          "canal_nome": "INEMA Futuros",
+          "data": "2026-11-08",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "rtex",
+      "grupo": "reels",
+      "emoji": "🧩",
+      "nome": "rtex",
+      "oque": "Reel de \"N peças\": um tema por vídeo, gancho forte no quadro de abertura, os passos do método e, no fim, uma pergunta de opinião para o público responder. Validador, crítico automático e QA conferem o formato antes de publicar.",
+      "serve": "Reel de método ou lista (\"as 3 peças de…\") que puxa comentário.",
+      "formato": "9:16 (60–90 s)",
+      "avatar": "Sim — avatar do Nei pelo estúdio HeyGen",
+      "acionamento": "Terminal ou bot: /rtex <tema> no inemaccbot; fila com timer",
+      "repo": "https://github.com/inematds/rtex",
+      "exemplos": [
+        {
+          "video_id": "DLPw-sI_TJI",
+          "url": "https://www.youtube.com/watch?v=DLPw-sI_TJI",
+          "titulo": "Seu design virou colagem: coloque critério antes do efeito #shorts",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "mz2WjAoNwok",
+          "url": "https://www.youtube.com/watch?v=mz2WjAoNwok",
+          "titulo": "Pare de pedir slide assim pro Claude: 3 peças pra ter a sua cara #shorts",
+          "canal": "lives4",
+          "canal_nome": "INEMA Tec",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "dydHb8BkkJk",
+          "url": "https://www.youtube.com/watch?v=dydHb8BkkJk",
+          "titulo": "Pare de disparar em volume para lista fria: prospecte por sinal com IA #shorts",
+          "canal": "lives1",
+          "canal_nome": "INEMA TDS",
+          "data": "2026-11-05",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "rtexjp",
+      "grupo": "reels",
+      "emoji": "🖌️",
+      "nome": "rtexjp",
+      "oque": "Monta reels ilustrados em azul-marinho a partir de um roteiro.json: gera a voz no próprio computador, desenha cada cena, mistura a trilha e confere sozinho o formato. Sem gravar e sem serviço de avatar pago.",
+      "serve": "Reel no padrão rtex quando não há avatar gravado: tudo ilustrado.",
+      "formato": "9:16",
+      "avatar": "Personagem ilustrado do Nei (sem HeyGen), voz local",
+      "acionamento": "Terminal ou bot: /rtexjp <tema> no inemaccbot",
+      "repo": "https://github.com/inematds/rtexjp",
+      "exemplos": [
+        {
+          "video_id": "UKqxVXTDVfI",
+          "url": "https://www.youtube.com/watch?v=UKqxVXTDVfI",
+          "titulo": "Você paga 200 dólares. A IA custa até 5 mil. #shorts",
+          "canal": "lives1",
+          "canal_nome": "INEMA TDS",
+          "data": "2026-11-05",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "78O5l2Coiv4",
+          "url": "https://www.youtube.com/watch?v=78O5l2Coiv4",
+          "titulo": "E se a China fechar a torneira da IA grátis? #shorts",
+          "canal": "lives1",
+          "canal_nome": "INEMA TDS",
+          "data": "2026-11-05",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "reel7etapas",
+      "grupo": "reels",
+      "emoji": "7️⃣",
+      "nome": "reel7etapas (antecessor do r7ex)",
+      "oque": "O primeiro modelo de reel em 7 etapas de gatilho (gancho, desejo, medo, facilidade, descoberta, benefício, comentário), com uma imagem por etapa e montagem em Python. Desde 18/10/2026 o padrão é o r7ex; o repositório guarda o motor antigo e o histórico.",
+      "serve": "Referência do roteiro de 7 etapas; reels novos saem pelo r7ex.",
+      "formato": "9:16",
+      "avatar": "Sim — avatar do Nei (HeyGen)",
+      "acionamento": "Terminal (/reel7etapas) — substituído pelo r7ex",
+      "repo": "https://github.com/inematds/reel7etapas",
+      "exemplos": [
+        {
+          "video_id": "cMhIavjhdh0",
+          "url": "https://www.youtube.com/watch?v=cMhIavjhdh0",
+          "titulo": "Sua empresa vai ter funcionário que não é gente: aprenda a gerir IA #shorts",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-10-18",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "J-ohqu_8V7o",
+          "url": "https://www.youtube.com/watch?v=J-ohqu_8V7o",
+          "titulo": "Seu agente de IA precisa aprender o seu jeito: conheça a regra 5-4-3",
+          "canal": "lives4",
+          "canal_nome": "INEMA Tec",
+          "data": "2026-10-18",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "qWffH0fDNeE",
+          "url": "https://www.youtube.com/watch?v=qWffH0fDNeE",
+          "titulo": "Como um Tesla poderia voar? Entenda a ideia dos propulsores de ar",
+          "canal": "lives1",
+          "canal_nome": "INEMA TDS",
+          "data": "2026-10-17",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "traducao",
+      "grupo": "explicativos",
+      "emoji": "🌎",
+      "nome": "Tradução de vídeo EN/ES",
+      "oque": "Leva um vídeo pronto para inglês e espanhol no mesmo formato do português: roteiro e deixas traduzidos pelo tradutor central, avatar e voz do Nei no idioma novo, montagem no explicavideos. Em espanhol, cada vídeo entra numa fila que publica aos poucos no canal Inema Espanhol.",
+      "serve": "Versões EN/ES de explicativos, reels e aulas.",
+      "formato": "16:9 e 9:16 (igual ao original)",
+      "avatar": "Sim — avatar e voz do Nei no idioma",
+      "acionamento": "Terminal (sessão) + fila-espanhol com timer (1 vídeo a cada 2 h, até 8 por dia)",
+      "repo": "https://github.com/inematds/explicavideos",
+      "repo_extra": [
+        {
+          "nome": "fila-espanhol",
+          "url": null
+        }
+      ],
+      "exemplos": [
+        {
+          "video_id": "S1uTys1xGnc",
+          "url": "https://www.youtube.com/watch?v=S1uTys1xGnc",
+          "titulo": "REA: tu agente de IA sin trabas para adaptar programas en tu computadora",
+          "canal": "espanhol",
+          "canal_nome": "Inema Espanhol",
+          "data": "2026-10-17",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "hzuNcPqHOEI",
+          "url": "https://www.youtube.com/watch?v=hzuNcPqHOEI",
+          "titulo": "IA Cultivada: por qué tu IA repite errores y cómo hacer que mejore",
+          "canal": "espanhol",
+          "canal_nome": "Inema Espanhol",
+          "data": "2026-10-14",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "L3-LqTC_qeI",
+          "url": "https://www.youtube.com/watch?v=L3-LqTC_qeI",
+          "titulo": "Codex + Claude: uno planifica, el otro critica #Shorts",
+          "canal": "espanhol",
+          "canal_nome": "Inema Espanhol",
+          "data": "2026-10-14",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "finviral",
+      "grupo": "radares",
+      "emoji": "💰",
+      "nome": "finviral",
+      "oque": "Assiste por transcrição aos vídeos dos maiores influenciadores de finanças, separa números, fatos e polêmicas e monta um vídeo com números grandes animados, a fonte de cada dado na tela e o Nei comentando. Sem recomendação de investimento.",
+      "serve": "Resumo diário do que se falou de finanças; no fim de semana, \"A semana explicada\".",
+      "formato": "9:16 diário + 16:9 longo no fim de semana",
+      "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: segunda a sexta 02:00, balanço no sábado",
+      "repo": "https://github.com/inematds/finviral",
+      "exemplos": [
+        {
+          "video_id": "lVnzzTdXz9I",
+          "url": "https://www.youtube.com/watch?v=lVnzzTdXz9I",
+          "titulo": "US$ 3 trilhões somem de Wall Street: a bolha da IA vai estourar?",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "pZ2ZCs_Udyo",
+          "url": "https://www.youtube.com/watch?v=pZ2ZCs_Udyo",
+          "titulo": "Selic parada em 13,75%: o que esperar até dezembro, explicado",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-08",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "4x2j7Xbq5ng",
+          "url": "https://www.youtube.com/watch?v=4x2j7Xbq5ng",
+          "titulo": "Financiamento de imóvel vai de 11% a 15% após a eleição: o que muda",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "saudeviral",
+      "grupo": "radares",
+      "emoji": "🩺",
+      "nome": "saudeviral",
+      "oque": "O mesmo radar para médicos, nutricionistas e psicólogos de maior audiência: tudo relatado e atribuído, e o que não tem consenso na medicina sai com o carimbo \"SEM CONSENSO\". Não substitui consulta médica.",
+      "serve": "Resumo diário do que os influenciadores de saúde disseram.",
+      "formato": "9:16 diário + 16:9 longo no fim de semana",
+      "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: segunda a sexta 05:00, balanço no sábado",
+      "repo": "https://github.com/inematds/saudeviral",
+      "exemplos": [
+        {
+          "video_id": "fN8iKWuTbmg",
+          "url": "https://www.youtube.com/watch?v=fN8iKWuTbmg",
+          "titulo": "Seu tipo sanguíneo muda o risco de câncer? O radar da saúde",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "xgvdLWqTtQw",
+          "url": "https://www.youtube.com/watch?v=xgvdLWqTtQw",
+          "titulo": "Borderline, luto do vivo e 1.800 degraus | A semana explicada",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-08",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "1BjYFTybiGY",
+          "url": "https://www.youtube.com/watch?v=1BjYFTybiGY",
+          "titulo": "US$ 16 bi em propaganda falsa? A semana da saúde explicada",
+          "canal": "lives12",
+          "canal_nome": "Saúde Diária",
+          "data": "2026-10-24",
+          "formato": "16:9"
+        }
+      ]
+    },
+    {
+      "id": "advviral",
+      "grupo": "radares",
+      "emoji": "⚖️",
+      "nome": "advviral",
+      "oque": "Radar do que os maiores advogados do YouTube disseram sobre direitos: consumidor, previdência, trabalho, dívidas, imóvel, família e golpes. Nada vira conselho para o seu caso, e proposta de lei é chamada de proposta.",
+      "serve": "Resumo diário de direitos, em linguagem simples.",
+      "formato": "9:16 diário + 16:9 longo no fim de semana",
+      "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: segunda a sexta 08:00, balanço no sábado",
+      "repo": "https://github.com/inematds/advviral",
+      "exemplos": [
+        {
+          "video_id": "TE9-6B4NbxM",
+          "url": "https://www.youtube.com/watch?v=TE9-6B4NbxM",
+          "titulo": "Processos contra o INSS mais que dobraram: por que tanta gente vai à Justiça",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "glv2cyDDECc",
+          "url": "https://www.youtube.com/watch?v=glv2cyDDECc",
+          "titulo": "Ataque hacker de US$ 49 mi à cripto: quem paga? | A semana explicada",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-08",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "R7FmcEOA1jo",
+          "url": "https://www.youtube.com/watch?v=R7FmcEOA1jo",
+          "titulo": "Carro de leilão sem aviso: loja teve que dar 30% de desconto",
+          "canal": "lives12",
+          "canal_nome": "Saúde Diária",
+          "data": "2026-10-13",
+          "formato": "16:9"
+        }
+      ]
+    },
+    {
+      "id": "futviral",
+      "grupo": "radares",
+      "emoji": "⚽",
+      "nome": "futviral",
+      "oque": "Resumo do que os 10 maiores canais de futebol disseram: Brasileirão, futebol europeu, mercado da bola e negócios, com carimbos (RUMOR, NEGOCIANDO, FECHADO, POLÊMICA). Rumor é tratado como rumor e aposta não entra.",
+      "serve": "Radar diário de futebol.",
+      "formato": "9:16 diário + 16:9 longo no fim de semana",
+      "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: gera às 9h, publica ao meio-dia",
+      "repo": "https://github.com/inematds/futviral",
+      "exemplos": [
+        {
+          "video_id": "7VM2auexshA",
+          "url": "https://www.youtube.com/watch?v=7VM2auexshA",
+          "titulo": "Grêmio na zona de rebaixamento e na final de R$ 78 milhões",
+          "canal": "lives24",
+          "canal_nome": "Inema Club24",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "d-J-JeG8dTU",
+          "url": "https://www.youtube.com/watch?v=d-J-JeG8dTU",
+          "titulo": "FUTVIRAL: Flamengo pode ser campeão no Allianz e Vasco decide hoje",
+          "canal": "lives24",
+          "canal_nome": "Inema Club24",
+          "data": "2026-11-08",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "aVWqhfVehwA",
+          "url": "https://www.youtube.com/watch?v=aVWqhfVehwA",
+          "titulo": "Flamengo a 2 vitórias do título no Allianz? A semana explicada",
+          "canal": "lives24",
+          "canal_nome": "Inema Club24",
+          "data": "2026-11-08",
+          "formato": "16:9"
+        }
+      ]
+    },
+    {
+      "id": "contaviral",
+      "grupo": "radares",
+      "emoji": "🧾",
+      "nome": "contaviral",
+      "oque": "Resumo do que os 10 maiores canais de contabilidade e tributos disseram: leis e portarias, Reforma Tributária, MEI e Simples, imposto de renda e obrigações fiscais, com carimbos (MUDOU A REGRA, PROPOSTA, PRAZO, ALERTA).",
+      "serve": "Radar diário contábil e tributário.",
+      "formato": "9:16 diário + 16:9 longo no fim de semana",
+      "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: gera às 10h, publica às 13h",
+      "repo": "https://github.com/inematds/contaviral",
+      "exemplos": [
+        {
+          "video_id": "0EG5d9CgNLo",
+          "url": "https://www.youtube.com/watch?v=0EG5d9CgNLo",
+          "titulo": "Perdão do MEI: quem parcelou pode parar? E o Seletivo só em fevereiro",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "noBpqjKgdNQ",
+          "url": "https://www.youtube.com/watch?v=noBpqjKgdNQ",
+          "titulo": "CBS a 11,34%? A alíquota que assustou e o que mais mudou na semana",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-08",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "qsYlEy48vaY",
+          "url": "https://www.youtube.com/watch?v=qsYlEy48vaY",
+          "titulo": "CBS de 11,34%, inflação e perdão do MEI: a semana contábil explicada",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-08",
+          "formato": "16:9"
+        }
+      ]
+    },
+    {
+      "id": "eventosextremospub",
+      "grupo": "automaticos",
+      "emoji": "🌪️",
+      "nome": "eventosextremospub (clima)",
+      "oque": "Transforma alertas de tempo severo num vídeo de \"sala de crise\": baixa dados públicos (alertas do INMET por município, satélite GOES-19, previsão do Open-Meteo), anima tudo num mapa 3D do Sul do Brasil e mostra a fonte de cada número.",
+      "serve": "Clima do dia, previsão e alertas da semana.",
+      "formato": "9:16",
+      "avatar": "Sim — Nei pelo estúdio HeyGen",
+      "acionamento": "Timers ao longo do dia (Clima 24 h, Previsão do Dia, Clima do DIA, alertas)",
+      "repo": "https://github.com/inematds/eventosextremospub",
+      "exemplos": [
+        {
+          "video_id": "i11SMouAllE",
+          "url": "https://www.youtube.com/watch?v=i11SMouAllE",
+          "titulo": "O clima no mundo 09/11: duna cai sobre barracas em Gaza, enxurrada no Iraque #Shorts",
+          "canal": "lives10",
+          "canal_nome": "Eventos Extremos INEMA",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "E8xsGn0xRXQ",
+          "url": "https://www.youtube.com/watch?v=E8xsGn0xRXQ",
+          "titulo": "654 cidades em alerta de tempestade amanhã · Alerta da semana 09/11 #Shorts",
+          "canal": "lives10",
+          "canal_nome": "Eventos Extremos INEMA",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "eN05Dt_jM0M",
+          "url": "https://www.youtube.com/watch?v=eN05Dt_jM0M",
+          "titulo": "Clima do dia 09/11: geada em novembro e 0,8 °C na serra catarinense #Shorts",
+          "canal": "lives10",
+          "canal_nome": "Eventos Extremos INEMA",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "vigia-canal",
+      "grupo": "automaticos",
+      "emoji": "👀",
+      "nome": "Vigia de canal",
+      "oque": "Todo dia olha um canal de referência; se houver vídeo novo, faz um explicavideo inspirado no conteúdo, na voz do Nei, e publica direto. Sem vídeo novo, não faz nada, e nunca repete um vídeo.",
+      "serve": "Explicativos automáticos sobre agentes e automação com IA.",
+      "formato": "16:9 + 9:16 (menos de 2 min)",
+      "avatar": "Sim — avatar e voz do Nei",
+      "acionamento": "Timer diário às 14h",
+      "repo": null,
+      "exemplos": [
+        {
+          "video_id": "Lw-LdQiyUpA",
+          "url": "https://www.youtube.com/watch?v=Lw-LdQiyUpA",
+          "titulo": "5 palavras e o projeto no ar: por que o prompt curto funciona melhor #shorts",
+          "canal": "lives7",
+          "canal_nome": "INEMA LOOPY",
+          "data": "2026-11-07",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "T6d1k8fgVHQ",
+          "url": "https://www.youtube.com/watch?v=T6d1k8fgVHQ",
+          "titulo": "Prompt de 5 palavras e zero código: 7 hábitos de quem está no topo da IA",
+          "canal": "lives7",
+          "canal_nome": "INEMA LOOPY",
+          "data": "2026-11-07",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "hageCcHOcLE",
+          "url": "https://www.youtube.com/watch?v=hageCcHOcLE",
+          "titulo": "A IA desligou 25 apps da TV e achou um minerador escondido: 3 usos que quase ninguém faz",
+          "canal": "lives7",
+          "canal_nome": "INEMA LOOPY",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "historia-timelapse",
+      "grupo": "automaticos",
+      "emoji": "🏙️",
+      "nome": "historia-timelapse",
+      "oque": "Timelapse 3D da história de uma cidade: relevo real, prédios do OpenStreetMap nascendo no ano em que o bairro foi ocupado, contador de população do IBGE e cartões com número, explicação e fonte.",
+      "serve": "História de cidades em vídeo; sai em fases (só música, narrada, com avatar).",
+      "formato": "16:9",
+      "avatar": "Opcional — fase 3 com avatar do Nei",
+      "acionamento": "Terminal (skill historia-timelapse); fila de publicação",
+      "repo": "https://github.com/inematds/historia-timelapse",
+      "exemplos": [
+        {
+          "video_id": "WzPVdaal1OY",
+          "url": "https://www.youtube.com/watch?v=WzPVdaal1OY",
+          "titulo": "Porto Alegre de 1772 a 2024: 252 anos em um timelapse 3D com luz realista",
+          "canal": "aventuras",
+          "canal_nome": "Aventuras INEMA",
+          "data": "2026-10-24",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "dalR1xWPFlE",
+          "url": "https://www.youtube.com/watch?v=dalR1xWPFlE",
+          "titulo": "O centro de Itaguaí em 3D: da Matriz de 1729 à cidade do futuro",
+          "canal": "aventuras",
+          "canal_nome": "Aventuras INEMA",
+          "data": "2026-10-23",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "Ij4KsTN_SB0",
+          "url": "https://www.youtube.com/watch?v=Ij4KsTN_SB0",
+          "titulo": "Rio de Janeiro de 1500 a 2024: 524 anos de história em timelapse 3D",
+          "canal": "aventuras",
+          "canal_nome": "Aventuras INEMA",
+          "data": "2026-10-23",
+          "formato": "16:9"
+        }
+      ]
+    },
+    {
+      "id": "aventurasinemavideo",
+      "grupo": "automaticos",
+      "emoji": "🏔️",
+      "nome": "aventurasinemavideo (Memórias de Aventura)",
+      "oque": "Transforma matérias reais do acervo do INEMA Aventura (2001 a 2012), com o relato e as fotos dos próprios aventureiros, em filmes narrados de 1 a 3 minutos: fotos restauradas com movimento e narração na voz do Nei.",
+      "serve": "A série Memórias de Aventura.",
+      "formato": "16:9",
+      "avatar": "Não — fotos do acervo + narração",
+      "acionamento": "Terminal / lote, com publicação no canal Aventuras INEMA",
+      "repo": "https://github.com/inematds/aventurasinemavideo",
+      "exemplos": [
+        {
+          "video_id": "vjsykS5_9HU",
+          "url": "https://www.youtube.com/watch?v=vjsykS5_9HU",
+          "titulo": "Beto Monteiro vence sob calor de 35°C na Fórmula Truck | Memórias de Aventura #166",
+          "canal": "aventuras",
+          "canal_nome": "Aventuras INEMA",
+          "data": "2026-11-09",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "PLPcwWAQgqE",
+          "url": "https://www.youtube.com/watch?v=PLPcwWAQgqE",
+          "titulo": "Allam Khodair: de 4º a vencedor na Stock Car 2010 | Memórias de Aventura #165",
+          "canal": "aventuras",
+          "canal_nome": "Aventuras INEMA",
+          "data": "2026-11-09",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "iqrvHLIET2Y",
+          "url": "https://www.youtube.com/watch?v=iqrvHLIET2Y",
+          "titulo": "De Curitiba ao Alasca de moto: 34 mil km em 1997 | Memórias de Aventura #164",
+          "canal": "aventuras",
+          "canal_nome": "Aventuras INEMA",
+          "data": "2026-11-09",
+          "formato": "16:9"
+        }
+      ]
+    },
+    {
+      "id": "gitbombando",
+      "grupo": "automaticos",
+      "emoji": "🔥",
+      "nome": "gitbombando",
+      "oque": "Todo dia faz o reel \"Bombando no GitHub\": os 10 projetos que mais ganharam estrelas, em contagem regressiva, com cartão, foto do dono, o que faz em português simples e o número de estrelas. Também gera dois carrosséis.",
+      "serve": "Novidades do GitHub Trending em 1 minuto.",
+      "formato": "9:16",
+      "avatar": "Sim — avatar do Nei (HeyGen)",
+      "acionamento": "Timer: gera às 9h, publica às 11h",
+      "repo": "https://github.com/inematds/gitbombando",
+      "exemplos": [
+        {
+          "video_id": "W3Mds0R28_A",
+          "url": "https://www.youtube.com/watch?v=W3Mds0R28_A",
+          "titulo": "Caça-apelidos dispara ao topo do GitHub com +4.294 estrelas em um dia #Shorts",
+          "canal": "lives4",
+          "canal_nome": "INEMA Tec",
+          "data": "2026-11-09",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "vXoQJMnVT1w",
+          "url": "https://www.youtube.com/watch?v=vXoQJMnVT1w",
+          "titulo": "Cloudflare segue no topo e um caça-apelidos invade o pódio: +2.085 estrelas no GitHub #Shorts",
+          "canal": "lives4",
+          "canal_nome": "INEMA Tec",
+          "data": "2026-11-08",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "3FXsmsRC0YA",
+          "url": "https://www.youtube.com/watch?v=3FXsmsRC0YA",
+          "titulo": "17.100 estrelas em 7 dias: o controle remoto de todas as IAs lidera o GitHub #Shorts",
+          "canal": "lives4",
+          "canal_nome": "INEMA Tec",
+          "data": "2026-11-08",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "video-codigo",
+      "grupo": "codigo",
+      "emoji": "💻",
+      "nome": "video-codigo",
+      "oque": "Skill para o Claude Code e o Codex em que cada quadro é escrito em código (HTML, Canvas ou SVG) e vira MP4. A voz, quando há, é gerada no computador e cada imagem entra no instante da palavra.",
+      "serve": "Lançamento, anúncio, explicativo ou filme de produto sem câmera e sem editor.",
+      "formato": "16:9 e 9:16 do mesmo projeto",
+      "avatar": "Não (rosto opcional, até meia tela)",
+      "acionamento": "Terminal (skill no Claude Code ou Codex)",
+      "repo": "https://github.com/inematds/video-codigo",
+      "exemplos": [
+        {
+          "video_id": "4ILX66Hddtk",
+          "url": "https://www.youtube.com/watch?v=4ILX66Hddtk",
+          "titulo": "Lead que espera esfria: do WhatsApp à venda em 1 minuto, feito com código #Shorts",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "tWv1mEIK62c",
+          "url": "https://www.youtube.com/watch?v=tWv1mEIK62c",
+          "titulo": "Do WhatsApp à venda: filme de produto feito 100% com código",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-06",
+          "formato": "16:9"
+        },
+        {
+          "video_id": "3JmREUS97-o",
+          "url": "https://www.youtube.com/watch?v=3JmREUS97-o",
+          "titulo": "Um filme feito só com código e música | INEMA.CLUB #Shorts",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "reel-ciencia-3d",
+      "grupo": "codigo",
+      "emoji": "🪐",
+      "nome": "reel-ciencia-3d",
+      "oque": "Kit com skill para o Claude Code que transforma uma pergunta \"E se…?\" num reel de ciência de cerca de 60 segundos, feito só com código (HyperFrames e Three.js), com a fonte de cada número e voz local.",
+      "serve": "Divulgação científica em vídeo curto, sem errar número.",
+      "formato": "9:16 (~60 s)",
+      "avatar": "Não",
+      "acionamento": "Terminal (skill no Claude Code)",
+      "repo": "https://github.com/inematds/reel-ciencia-3d",
+      "exemplos": [
+        {
+          "video_id": "FDtJim4xHjY",
+          "url": "https://www.youtube.com/watch?v=FDtJim4xHjY",
+          "titulo": "E se o Sol sumisse agora? Animação 3D feita só com código",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "nUsGrdZ-8MY",
+          "url": "https://www.youtube.com/watch?v=nUsGrdZ-8MY",
+          "titulo": "E se a Lua sumisse? Animação 3D feita só com código",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        },
+        {
+          "video_id": "BmSeV6r0FdQ",
+          "url": "https://www.youtube.com/watch?v=BmSeV6r0FdQ",
+          "titulo": "E se a Terra não tivesse inclinação? Animação 3D feita só com código",
+          "canal": "lives3",
+          "canal_nome": "INEMA FTD",
+          "data": "2026-11-06",
+          "formato": "9:16"
+        }
+      ]
+    },
+    {
+      "id": "video-sem-rosto",
+      "grupo": "codigo",
+      "emoji": "🎙️",
+      "nome": "video-sem-rosto",
+      "oque": "Kit que ensina o Claude Code a fazer explicativos na horizontal sem gravar nada: voz clonada gerada no computador, a página real do site, imagens 3D e legenda sincronizada.",
+      "serve": "Explicar uma ferramenta, um repositório ou uma novidade sem aparecer.",
+      "formato": "16:9",
+      "avatar": "Não",
+      "acionamento": "Terminal (skill no Claude Code)",
+      "repo": "https://github.com/inematds/video-sem-rosto",
+      "nota_exemplos": "Ainda sem vídeo publicado no YouTube por este motor; os vídeos de demonstração estão no guia do projeto.",
+      "exemplos": []
+    },
+    {
+      "id": "videos-cursos-inema",
+      "grupo": "codigo",
+      "emoji": "🎓",
+      "nome": "videos-cursos-inema",
+      "oque": "Motor que transforma um curso INEMA (site estático) numa série de vídeos narrados e animados, em três partes selecionáveis: landing, um vídeo por trilha e uma aula completa por módulo.",
+      "serve": "Vídeos de divulgação e aulas de um curso.",
+      "formato": "16:9 (e 9:16 com --vertical)",
+      "avatar": "Não — narração com voz clonada local",
+      "acionamento": "Terminal (skill videos-cursos-inema)",
+      "repo": "https://github.com/inematds/videos-cursos-inema",
+      "nota_exemplos": "Nenhum vídeo deste motor aparece no histórico de publicações; o guia do projeto mostra o exemplo do curso FEP.",
+      "exemplos": []
+    },
+    {
+      "id": "inemavox",
+      "grupo": "apoio",
+      "emoji": "🔊",
+      "nome": "inemavox",
+      "oque": "Suíte de voz com IA local que todos os motores usam por baixo: baixa vídeos, transcreve, gera voz (TTS), dubla e corta, com os modelos rodando na placa de vídeo, sem custo de API.",
+      "serve": "Voz, transcrição, download e música/efeitos para os outros motores.",
+      "formato": "—",
+      "avatar": "—",
+      "acionamento": "Terminal (scripts) ou API local",
+      "repo": "https://github.com/inematds/inemavox",
+      "nota_exemplos": "Motor de apoio: não publica vídeo próprio.",
+      "exemplos": []
+    }
+  ]
+}

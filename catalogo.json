@@ -1,0 +1,270 @@
+{
+  "_sobre": "Fonte do índice (editada à mão). O atualizar-exemplos.py junta isto com o histórico de publicações e grava motores.json. Textos em PT; EN/ES ficam em i18n/en.json e i18n/es.json.",
+  "canais": {
+    "lives1": {"nome": "INEMA TDS", "url": "https://www.youtube.com/@inematdsx"},
+    "lives2": {"nome": "INEMA TIA", "url": "https://www.youtube.com/@InemaTIA"},
+    "lives3": {"nome": "INEMA FTD", "url": "https://www.youtube.com/@INEMAFTD"},
+    "lives4": {"nome": "INEMA Tec", "url": "https://www.youtube.com/@inematec"},
+    "lives6": {"nome": "INEMA Robot", "url": "https://www.youtube.com/channel/UCZ5fAkd2Z9PB3sHKbRKEYeQ"},
+    "lives7": {"nome": "INEMA LOOPY", "url": "https://www.youtube.com/channel/UCKBiylp-fueqbKiq7FqrM6g"},
+    "lives8": {"nome": "Inema Vibe", "url": "https://www.youtube.com/channel/UCJxL11aomXJiBZga-JXylgQ"},
+    "lives10": {"nome": "Eventos Extremos INEMA", "url": "https://www.youtube.com/@eventosextremos-inema"},
+    "lives11": {"nome": "INEMA Futuros", "url": "https://www.youtube.com/channel/UCx3T2Ltl8-gsiIytjNZ306w"},
+    "lives12": {"nome": "Saúde Diária", "url": "https://www.youtube.com/@InemaPro"},
+    "lives24": {"nome": "Inema Club24", "url": "https://www.youtube.com/channel/UC3vxpzIJyPl2WraCBCZ07JA"},
+    "aventuras": {"nome": "Aventuras INEMA", "url": "https://www.youtube.com/@aventurasinema"},
+    "espanhol": {"nome": "Inema Espanhol", "url": "https://www.youtube.com/@inemaespanhol"}
+  },
+  "grupos": [
+    {"id": "explicativos", "nome": "Explicativos com avatar"},
+    {"id": "reels", "nome": "Reels virais 9:16"},
+    {"id": "radares", "nome": "Radares diários automáticos"},
+    {"id": "automaticos", "nome": "Outras linhas automáticas"},
+    {"id": "codigo", "nome": "Vídeo feito em código (sem câmera)"},
+    {"id": "apoio", "nome": "Apoio"}
+  ],
+  "motores": [
+    {
+      "id": "explicavideos", "grupo": "explicativos", "emoji": "🎬",
+      "nome": "explicavideos (explicavideo)",
+      "oque": "Motor base dos vídeos explicativos: o roteiro vira cenas com ilustrações, capítulos e legenda, e o avatar do Nei fala o texto. Tem um perfil viral, com gancho na abertura e imagens de impacto.",
+      "serve": "Explicar um assunto, uma ferramenta ou um projeto do INEMA, do vídeo longo ao corte curto.",
+      "formato": "16:9 e 9:16", "avatar": "Sim — avatar e voz do Nei pelo estúdio HeyGen (há versão sem avatar, com voz local)",
+      "acionamento": "Terminal (sessão com o agente) ou bot: /explicavideo <assunto> no inemaccbot",
+      "repo": "https://github.com/inematds/explicavideos",
+      "regras": {"producoes": ["explicavideo"]},
+      "excluir": ["NtuTfKogeIc", "q691yAilGsY", "Aio7Lw4L_bM", "36UQyawSwSY", "VNrwDOUTqgk", "LgBkOTBVTxw"]
+    },
+    {
+      "id": "refazvideo", "grupo": "explicativos", "emoji": "🔁",
+      "nome": "refazvideo",
+      "oque": "Passo a passo para um agente de IA refazer um vídeo de referência como explicativo próprio, em português: baixa, transcreve, escreve um roteiro novo, mostra uma prévia e só gera o avatar depois do \"pode fazer\".",
+      "serve": "Explicar em português um assunto que apareceu num bom vídeo, sem gravar a si mesmo.",
+      "formato": "16:9 e 9:16", "avatar": "Sim — avatar e voz do Nei (HeyGen); renderiza no explicavideos",
+      "acionamento": "Terminal (sessão com o agente), com prévia e OK antes do avatar",
+      "repo": "https://github.com/inematds/refazvideo",
+      "regras": {"producoes": ["refazvideo"]}
+    },
+    {
+      "id": "r7exp", "grupo": "explicativos", "emoji": "🗺️",
+      "nome": "r7exp",
+      "oque": "Explicativo visual que ensina opções: um gráfico que funciona como mapa, a mesma pessoa atravessando cada cenário, painéis que entram na palavra falada e, no fim, o que você pode fazer.",
+      "serve": "Temas com caminhos ou cenários (\"qual futuro\", \"qual escolha\"), em que cada opção precisa ser explicada.",
+      "formato": "16:9 completo + um reel 9:16 por opção", "avatar": "Sim — avatar do Nei (meia tela no começo, depois no canto)",
+      "acionamento": "Terminal (sessão com o agente); motor ainda em protótipo",
+      "repo": "https://github.com/inematds/r7exp",
+      "regras": {"origem": ["/r7exp/"]}
+    },
+    {
+      "id": "r7ex", "grupo": "reels", "emoji": "⚡",
+      "nome": "r7ex",
+      "oque": "Linha de produção de reels com roteiro de 7 etapas de gatilho, do gancho com número ao pedido de comentário, e acabamento de telejornal: título desenhado na abertura, painéis no tempo da fala, contador e legenda que acende com a voz.",
+      "serve": "Reel viral de 40 a 50 segundos a partir de uma tese ou opinião forte.",
+      "formato": "9:16", "avatar": "Sim — Nei em meia tela no gancho, depois no canto (HeyGen)",
+      "acionamento": "Terminal (/r7ex) ou bot: /r7ex <tema> no inemaccbot; publicação por fila com timer",
+      "repo": "https://github.com/inematds/r7ex",
+      "regras": {"origem": ["/r7ex/edicoes/"]},
+      "excluir": ["dt5ekPf7znY"],
+      "excluir_titulo": ["8 modelos"]
+    },
+    {
+      "id": "rtex", "grupo": "reels", "emoji": "🧩",
+      "nome": "rtex",
+      "oque": "Reel de \"N peças\": um tema por vídeo, gancho forte no quadro de abertura, os passos do método e, no fim, uma pergunta de opinião para o público responder. Validador, crítico automático e QA conferem o formato antes de publicar.",
+      "serve": "Reel de método ou lista (\"as 3 peças de…\") que puxa comentário.",
+      "formato": "9:16 (60–90 s)", "avatar": "Sim — avatar do Nei pelo estúdio HeyGen",
+      "acionamento": "Terminal ou bot: /rtex <tema> no inemaccbot; fila com timer",
+      "repo": "https://github.com/inematds/rtex",
+      "regras": {"origem": ["/rtex/edicoes/"]},
+      "excluir": ["cokjkBLe8mY"]
+    },
+    {
+      "id": "rtexjp", "grupo": "reels", "emoji": "🖌️",
+      "nome": "rtexjp",
+      "oque": "Monta reels ilustrados em azul-marinho a partir de um roteiro.json: gera a voz no próprio computador, desenha cada cena, mistura a trilha e confere sozinho o formato. Sem gravar e sem serviço de avatar pago.",
+      "serve": "Reel no padrão rtex quando não há avatar gravado: tudo ilustrado.",
+      "formato": "9:16", "avatar": "Personagem ilustrado do Nei (sem HeyGen), voz local",
+      "acionamento": "Terminal ou bot: /rtexjp <tema> no inemaccbot",
+      "repo": "https://github.com/inematds/rtexjp",
+      "regras": {"origem": ["/rtexjp/edicoes/"]},
+      "excluir": ["AZEZK1YgF98"]
+    },
+    {
+      "id": "reel7etapas", "grupo": "reels", "emoji": "7️⃣",
+      "nome": "reel7etapas (antecessor do r7ex)",
+      "oque": "O primeiro modelo de reel em 7 etapas de gatilho (gancho, desejo, medo, facilidade, descoberta, benefício, comentário), com uma imagem por etapa e montagem em Python. Desde 18/10/2026 o padrão é o r7ex; o repositório guarda o motor antigo e o histórico.",
+      "serve": "Referência do roteiro de 7 etapas; reels novos saem pelo r7ex.",
+      "formato": "9:16", "avatar": "Sim — avatar do Nei (HeyGen)",
+      "acionamento": "Terminal (/reel7etapas) — substituído pelo r7ex",
+      "repo": "https://github.com/inematds/reel7etapas",
+      "regras": {"origem": ["/reel7etapas/edicoes/"]}
+    },
+    {
+      "id": "traducao", "grupo": "explicativos", "emoji": "🌎",
+      "nome": "Tradução de vídeo EN/ES",
+      "oque": "Leva um vídeo pronto para inglês e espanhol no mesmo formato do português: roteiro e deixas traduzidos pelo tradutor central, avatar e voz do Nei no idioma novo, montagem no explicavideos. Em espanhol, cada vídeo entra numa fila que publica aos poucos no canal Inema Espanhol.",
+      "serve": "Versões EN/ES de explicativos, reels e aulas.",
+      "formato": "16:9 e 9:16 (igual ao original)", "avatar": "Sim — avatar e voz do Nei no idioma",
+      "acionamento": "Terminal (sessão) + fila-espanhol com timer (1 vídeo a cada 2 h, até 8 por dia)",
+      "repo": "https://github.com/inematds/explicavideos",
+      "repo_extra": [{"nome": "fila-espanhol", "url": null}],
+      "regras": {"canal": ["espanhol"]},
+      "fixar": ["hzuNcPqHOEI", "L3-LqTC_qeI", "S1uTys1xGnc"]
+    },
+    {
+      "id": "finviral", "grupo": "radares", "emoji": "💰",
+      "nome": "finviral",
+      "oque": "Assiste por transcrição aos vídeos dos maiores influenciadores de finanças, separa números, fatos e polêmicas e monta um vídeo com números grandes animados, a fonte de cada dado na tela e o Nei comentando. Sem recomendação de investimento.",
+      "serve": "Resumo diário do que se falou de finanças; no fim de semana, \"A semana explicada\".",
+      "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: segunda a sexta 02:00, balanço no sábado",
+      "repo": "https://github.com/inematds/finviral",
+      "regras": {"origem": ["/finviral/"]}
+    },
+    {
+      "id": "saudeviral", "grupo": "radares", "emoji": "🩺",
+      "nome": "saudeviral",
+      "oque": "O mesmo radar para médicos, nutricionistas e psicólogos de maior audiência: tudo relatado e atribuído, e o que não tem consenso na medicina sai com o carimbo \"SEM CONSENSO\". Não substitui consulta médica.",
+      "serve": "Resumo diário do que os influenciadores de saúde disseram.",
+      "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: segunda a sexta 05:00, balanço no sábado",
+      "repo": "https://github.com/inematds/saudeviral",
+      "regras": {"origem": ["/saudeviral/"]}
+    },
+    {
+      "id": "advviral", "grupo": "radares", "emoji": "⚖️",
+      "nome": "advviral",
+      "oque": "Radar do que os maiores advogados do YouTube disseram sobre direitos: consumidor, previdência, trabalho, dívidas, imóvel, família e golpes. Nada vira conselho para o seu caso, e proposta de lei é chamada de proposta.",
+      "serve": "Resumo diário de direitos, em linguagem simples.",
+      "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: segunda a sexta 08:00, balanço no sábado",
+      "repo": "https://github.com/inematds/advviral",
+      "regras": {"origem": ["/advviral/"]}
+    },
+    {
+      "id": "futviral", "grupo": "radares", "emoji": "⚽",
+      "nome": "futviral",
+      "oque": "Resumo do que os 10 maiores canais de futebol disseram: Brasileirão, futebol europeu, mercado da bola e negócios, com carimbos (RUMOR, NEGOCIANDO, FECHADO, POLÊMICA). Rumor é tratado como rumor e aposta não entra.",
+      "serve": "Radar diário de futebol.",
+      "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: gera às 9h, publica ao meio-dia",
+      "repo": "https://github.com/inematds/futviral",
+      "regras": {"origem": ["/futviral/"]}
+    },
+    {
+      "id": "contaviral", "grupo": "radares", "emoji": "🧾",
+      "nome": "contaviral",
+      "oque": "Resumo do que os 10 maiores canais de contabilidade e tributos disseram: leis e portarias, Reforma Tributária, MEI e Simples, imposto de renda e obrigações fiscais, com carimbos (MUDOU A REGRA, PROPOSTA, PRAZO, ALERTA).",
+      "serve": "Radar diário contábil e tributário.",
+      "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
+      "acionamento": "Timer: gera às 10h, publica às 13h",
+      "repo": "https://github.com/inematds/contaviral",
+      "regras": {"origem": ["/contaviral/"]}
+    },
+    {
+      "id": "eventosextremospub", "grupo": "automaticos", "emoji": "🌪️",
+      "nome": "eventosextremospub (clima)",
+      "oque": "Transforma alertas de tempo severo num vídeo de \"sala de crise\": baixa dados públicos (alertas do INMET por município, satélite GOES-19, previsão do Open-Meteo), anima tudo num mapa 3D do Sul do Brasil e mostra a fonte de cada número.",
+      "serve": "Clima do dia, previsão e alertas da semana.",
+      "formato": "9:16", "avatar": "Sim — Nei pelo estúdio HeyGen",
+      "acionamento": "Timers ao longo do dia (Clima 24 h, Previsão do Dia, Clima do DIA, alertas)",
+      "repo": "https://github.com/inematds/eventosextremospub",
+      "regras": {"origem": ["/eventosextremospub/"], "so_canais": ["lives10"]}
+    },
+    {
+      "id": "vigia-canal", "grupo": "automaticos", "emoji": "👀",
+      "nome": "Vigia de canal",
+      "oque": "Todo dia olha um canal de referência; se houver vídeo novo, faz um explicavideo inspirado no conteúdo, na voz do Nei, e publica direto. Sem vídeo novo, não faz nada, e nunca repete um vídeo.",
+      "serve": "Explicativos automáticos sobre agentes e automação com IA.",
+      "formato": "16:9 + 9:16 (menos de 2 min)", "avatar": "Sim — avatar e voz do Nei",
+      "acionamento": "Timer diário às 14h",
+      "repo": null,
+      "regras": {},
+      "nota_regras": "regra de identificação em regras.locais.json (fora do git)"
+    },
+    {
+      "id": "historia-timelapse", "grupo": "automaticos", "emoji": "🏙️",
+      "nome": "historia-timelapse",
+      "oque": "Timelapse 3D da história de uma cidade: relevo real, prédios do OpenStreetMap nascendo no ano em que o bairro foi ocupado, contador de população do IBGE e cartões com número, explicação e fonte.",
+      "serve": "História de cidades em vídeo; sai em fases (só música, narrada, com avatar).",
+      "formato": "16:9", "avatar": "Opcional — fase 3 com avatar do Nei",
+      "acionamento": "Terminal (skill historia-timelapse); fila de publicação",
+      "repo": "https://github.com/inematds/historia-timelapse",
+      "regras": {"origem": ["/historia-timelapse/"]}
+    },
+    {
+      "id": "aventurasinemavideo", "grupo": "automaticos", "emoji": "🏔️",
+      "nome": "aventurasinemavideo (Memórias de Aventura)",
+      "oque": "Transforma matérias reais do acervo do INEMA Aventura (2001 a 2012), com o relato e as fotos dos próprios aventureiros, em filmes narrados de 1 a 3 minutos: fotos restauradas com movimento e narração na voz do Nei.",
+      "serve": "A série Memórias de Aventura.",
+      "formato": "16:9", "avatar": "Não — fotos do acervo + narração",
+      "acionamento": "Terminal / lote, com publicação no canal Aventuras INEMA",
+      "repo": "https://github.com/inematds/aventurasinemavideo",
+      "regras": {"origem": ["memorias-avent", "memorias-aventura"], "so_canais": ["aventuras"]}
+    },
+    {
+      "id": "gitbombando", "grupo": "automaticos", "emoji": "🔥",
+      "nome": "gitbombando",
+      "oque": "Todo dia faz o reel \"Bombando no GitHub\": os 10 projetos que mais ganharam estrelas, em contagem regressiva, com cartão, foto do dono, o que faz em português simples e o número de estrelas. Também gera dois carrosséis.",
+      "serve": "Novidades do GitHub Trending em 1 minuto.",
+      "formato": "9:16", "avatar": "Sim — avatar do Nei (HeyGen)",
+      "acionamento": "Timer: gera às 9h, publica às 11h",
+      "repo": "https://github.com/inematds/gitbombando",
+      "regras": {"origem": ["/gitbombando/"]}
+    },
+    {
+      "id": "video-codigo", "grupo": "codigo", "emoji": "💻",
+      "nome": "video-codigo",
+      "oque": "Skill para o Claude Code e o Codex em que cada quadro é escrito em código (HTML, Canvas ou SVG) e vira MP4. A voz, quando há, é gerada no computador e cada imagem entra no instante da palavra.",
+      "serve": "Lançamento, anúncio, explicativo ou filme de produto sem câmera e sem editor.",
+      "formato": "16:9 e 9:16 do mesmo projeto", "avatar": "Não (rosto opcional, até meia tela)",
+      "acionamento": "Terminal (skill no Claude Code ou Codex)",
+      "repo": "https://github.com/inematds/video-codigo",
+      "regras": {"origem": ["/video-codigo/"]}
+    },
+    {
+      "id": "reel-ciencia-3d", "grupo": "codigo", "emoji": "🪐",
+      "nome": "reel-ciencia-3d",
+      "oque": "Kit com skill para o Claude Code que transforma uma pergunta \"E se…?\" num reel de ciência de cerca de 60 segundos, feito só com código (HyperFrames e Three.js), com a fonte de cada número e voz local.",
+      "serve": "Divulgação científica em vídeo curto, sem errar número.",
+      "formato": "9:16 (~60 s)", "avatar": "Não",
+      "acionamento": "Terminal (skill no Claude Code)",
+      "repo": "https://github.com/inematds/reel-ciencia-3d",
+      "regras": {"origem": ["/reel-ciencia-3d/"]},
+      "excluir": ["3YxZzKGvzXM", "sdyzJweL050", "C_1Dx3azLOw"]
+    },
+    {
+      "id": "video-sem-rosto", "grupo": "codigo", "emoji": "🎙️",
+      "nome": "video-sem-rosto",
+      "oque": "Kit que ensina o Claude Code a fazer explicativos na horizontal sem gravar nada: voz clonada gerada no computador, a página real do site, imagens 3D e legenda sincronizada.",
+      "serve": "Explicar uma ferramenta, um repositório ou uma novidade sem aparecer.",
+      "formato": "16:9", "avatar": "Não",
+      "acionamento": "Terminal (skill no Claude Code)",
+      "repo": "https://github.com/inematds/video-sem-rosto",
+      "regras": {"origem": ["/video-sem-rosto/"]},
+      "nota_exemplos": "Ainda sem vídeo publicado no YouTube por este motor; os vídeos de demonstração estão no guia do projeto."
+    },
+    {
+      "id": "videos-cursos-inema", "grupo": "codigo", "emoji": "🎓",
+      "nome": "videos-cursos-inema",
+      "oque": "Motor que transforma um curso INEMA (site estático) numa série de vídeos narrados e animados, em três partes selecionáveis: landing, um vídeo por trilha e uma aula completa por módulo.",
+      "serve": "Vídeos de divulgação e aulas de um curso.",
+      "formato": "16:9 (e 9:16 com --vertical)", "avatar": "Não — narração com voz clonada local",
+      "acionamento": "Terminal (skill videos-cursos-inema)",
+      "repo": "https://github.com/inematds/videos-cursos-inema",
+      "regras": {"origem": ["-videos-cursos/"]},
+      "nota_exemplos": "Nenhum vídeo deste motor aparece no histórico de publicações; o guia do projeto mostra o exemplo do curso FEP."
+    },
+    {
+      "id": "inemavox", "grupo": "apoio", "emoji": "🔊",
+      "nome": "inemavox",
+      "oque": "Suíte de voz com IA local que todos os motores usam por baixo: baixa vídeos, transcreve, gera voz (TTS), dubla e corta, com os modelos rodando na placa de vídeo, sem custo de API.",
+      "serve": "Voz, transcrição, download e música/efeitos para os outros motores.",
+      "formato": "—", "avatar": "—",
+      "acionamento": "Terminal (scripts) ou API local",
+      "repo": "https://github.com/inematds/inemavox",
+      "regras": {},
+      "nota_exemplos": "Motor de apoio: não publica vídeo próprio."
+    }
+  ]
+}
