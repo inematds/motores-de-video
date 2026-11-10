@@ -128,9 +128,8 @@ The first 7-step hook reel model (hook, desire, fear, ease, discovery, benefit, 
 - **How it is triggered:** Terminal (/reel7etapas) — replaced by r7ex
 - **Repository:** [github.com/inematds/reel7etapas](https://github.com/inematds/reel7etapas)
 - **Published examples:**
-  - [Sua empresa vai ter funcionário que não é gente: aprenda a gerir IA #shorts](https://www.youtube.com/watch?v=cMhIavjhdh0) — INEMA FTD, 2026-10-18, 9:16
-  - [Seu agente de IA precisa aprender o seu jeito: conheça a regra 5-4-3](https://www.youtube.com/watch?v=J-ohqu_8V7o) — INEMA Tec, 2026-10-18, 9:16
-  - [Como um Tesla poderia voar? Entenda a ideia dos propulsores de ar](https://www.youtube.com/watch?v=qWffH0fDNeE) — INEMA TDS, 2026-10-17, 9:16
+  - [Vem aí demissão em massa de gerentes? A IA vai cobrar preparo #shorts](https://www.youtube.com/watch?v=xpDV5qQe5oE) — INEMA FTD, 2026-10-18, 9:16
+- Older engine: this example shows the previous format, which led to r7ex. To see the current format, check the r7ex examples.
 
 ### Automated daily radar reports
 
@@ -160,7 +159,7 @@ The same radar for doctors, nutritionists, and psychologists with the largest au
 - **Published examples:**
   - [Seu tipo sanguíneo muda o risco de câncer? O radar da saúde](https://www.youtube.com/watch?v=fN8iKWuTbmg) — INEMA TIA, 2026-11-09, 9:16
   - [Borderline, luto do vivo e 1.800 degraus | A semana explicada](https://www.youtube.com/watch?v=xgvdLWqTtQw) — INEMA TIA, 2026-11-08, 16:9
-  - [US$ 16 bi em propaganda falsa? A semana da saúde explicada](https://www.youtube.com/watch?v=1BjYFTybiGY) — Saúde Diária, 2026-10-24, 16:9
+  - [Luto de quem está vivo, borderline e a gema do ovo: a semana da saúde](https://www.youtube.com/watch?v=BC4_4tpDUYE) — INEMA TIA, 2026-11-08, 9:16
 
 #### ⚖️ advviral
 
@@ -174,7 +173,7 @@ Tracks what leading YouTube lawyers say about rights: consumer, social security,
 - **Published examples:**
   - [Processos contra o INSS mais que dobraram: por que tanta gente vai à Justiça](https://www.youtube.com/watch?v=TE9-6B4NbxM) — INEMA TIA, 2026-11-09, 9:16
   - [Ataque hacker de US$ 49 mi à cripto: quem paga? | A semana explicada](https://www.youtube.com/watch?v=glv2cyDDECc) — INEMA TIA, 2026-11-08, 16:9
-  - [Carro de leilão sem aviso: loja teve que dar 30% de desconto](https://www.youtube.com/watch?v=R7FmcEOA1jo) — Saúde Diária, 2026-10-13, 16:9
+  - [Aposentadoria com 15 anos paga só 60% da média, e mais 4 direitos](https://www.youtube.com/watch?v=pB4iDtByzyc) — INEMA TIA, 2026-11-07, 16:9
 
 #### ⚽ futviral
 
@@ -224,7 +223,7 @@ Turns severe weather alerts into a “crisis room” video: downloads public dat
 
 Checks a reference channel every day. If there is a new video, it creates an explainer video inspired by the content, in Nei’s voice, and publishes it directly. If there is no new video, it does nothing and never repeats a video.
 
-- **Best for:** Automated explainers about AI agents and automation.
+- **Best for:** Automatic explainers whenever new content appears in the reference, without anyone asking.
 - **Format:** 16:9 + 9:16 (under 2 min)
 - **Avatar:** Yes — Nei’s avatar and voice
 - **How it is triggered:** Daily timer at 14:00
@@ -290,7 +289,7 @@ A skill for Claude Code and Codex where every frame is written in code (HTML, Ca
 - **Published examples:**
   - [Lead que espera esfria: do WhatsApp à venda em 1 minuto, feito com código #Shorts](https://www.youtube.com/watch?v=4ILX66Hddtk) — INEMA FTD, 2026-11-06, 9:16
   - [Do WhatsApp à venda: filme de produto feito 100% com código](https://www.youtube.com/watch?v=tWv1mEIK62c) — INEMA FTD, 2026-11-06, 16:9
-  - [Um filme feito só com código e música | INEMA.CLUB #Shorts](https://www.youtube.com/watch?v=3JmREUS97-o) — INEMA FTD, 2026-11-06, 9:16
+- For now, only 2 examples were found in the history.
 
 #### 🪐 reel-ciencia-3d
 

@@ -38,10 +38,6 @@
       "nome": "INEMA Futuros",
       "url": "https://www.youtube.com/channel/UCx3T2Ltl8-gsiIytjNZ306w"
     },
-    "lives12": {
-      "nome": "Saúde Diária",
-      "url": "https://www.youtube.com/@InemaPro"
-    },
     "lives24": {
       "nome": "Inema Club24",
       "url": "https://www.youtube.com/channel/UC3vxpzIJyPl2WraCBCZ07JA"
@@ -330,32 +326,15 @@
       "avatar": "Sim — avatar do Nei (HeyGen)",
       "acionamento": "Terminal (/reel7etapas) — substituído pelo r7ex",
       "repo": "https://github.com/inematds/reel7etapas",
+      "nota_exemplos": "Motor antigo: o exemplo mostra o padrão anterior, que levou ao r7ex. Para ver o formato atual, veja os exemplos do r7ex.",
       "exemplos": [
         {
-          "video_id": "cMhIavjhdh0",
-          "url": "https://www.youtube.com/watch?v=cMhIavjhdh0",
-          "titulo": "Sua empresa vai ter funcionário que não é gente: aprenda a gerir IA #shorts",
+          "video_id": "xpDV5qQe5oE",
+          "url": "https://www.youtube.com/watch?v=xpDV5qQe5oE",
+          "titulo": "Vem aí demissão em massa de gerentes? A IA vai cobrar preparo #shorts",
           "canal": "lives3",
           "canal_nome": "INEMA FTD",
           "data": "2026-10-18",
-          "formato": "9:16"
-        },
-        {
-          "video_id": "J-ohqu_8V7o",
-          "url": "https://www.youtube.com/watch?v=J-ohqu_8V7o",
-          "titulo": "Seu agente de IA precisa aprender o seu jeito: conheça a regra 5-4-3",
-          "canal": "lives4",
-          "canal_nome": "INEMA Tec",
-          "data": "2026-10-18",
-          "formato": "9:16"
-        },
-        {
-          "video_id": "qWffH0fDNeE",
-          "url": "https://www.youtube.com/watch?v=qWffH0fDNeE",
-          "titulo": "Como um Tesla poderia voar? Entenda a ideia dos propulsores de ar",
-          "canal": "lives1",
-          "canal_nome": "INEMA TDS",
-          "data": "2026-10-17",
           "formato": "9:16"
         }
       ]
@@ -479,13 +458,13 @@
           "formato": "16:9"
         },
         {
-          "video_id": "1BjYFTybiGY",
-          "url": "https://www.youtube.com/watch?v=1BjYFTybiGY",
-          "titulo": "US$ 16 bi em propaganda falsa? A semana da saúde explicada",
-          "canal": "lives12",
-          "canal_nome": "Saúde Diária",
-          "data": "2026-10-24",
-          "formato": "16:9"
+          "video_id": "BC4_4tpDUYE",
+          "url": "https://www.youtube.com/watch?v=BC4_4tpDUYE",
+          "titulo": "Luto de quem está vivo, borderline e a gema do ovo: a semana da saúde",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-08",
+          "formato": "9:16"
         }
       ]
     },
@@ -520,12 +499,12 @@
           "formato": "16:9"
         },
         {
-          "video_id": "R7FmcEOA1jo",
-          "url": "https://www.youtube.com/watch?v=R7FmcEOA1jo",
-          "titulo": "Carro de leilão sem aviso: loja teve que dar 30% de desconto",
-          "canal": "lives12",
-          "canal_nome": "Saúde Diária",
-          "data": "2026-10-13",
+          "video_id": "pB4iDtByzyc",
+          "url": "https://www.youtube.com/watch?v=pB4iDtByzyc",
+          "titulo": "Aposentadoria com 15 anos paga só 60% da média, e mais 4 direitos",
+          "canal": "lives2",
+          "canal_nome": "INEMA TIA",
+          "data": "2026-11-07",
           "formato": "16:9"
         }
       ]
@@ -659,7 +638,7 @@
       "emoji": "👀",
       "nome": "Vigia de canal",
       "oque": "Todo dia olha um canal de referência; se houver vídeo novo, faz um explicavideo inspirado no conteúdo, na voz do Nei, e publica direto. Sem vídeo novo, não faz nada, e nunca repete um vídeo.",
-      "serve": "Explicativos automáticos sobre agentes e automação com IA.",
+      "serve": "Explicativos automáticos, sem ninguém pedir, quando sai conteúdo novo na referência.",
       "formato": "16:9 + 9:16 (menos de 2 min)",
       "avatar": "Sim — avatar e voz do Nei",
       "acionamento": "Timer diário às 14h",
@@ -846,15 +825,6 @@
           "canal_nome": "INEMA FTD",
           "data": "2026-11-06",
           "formato": "16:9"
-        },
-        {
-          "video_id": "3JmREUS97-o",
-          "url": "https://www.youtube.com/watch?v=3JmREUS97-o",
-          "titulo": "Um filme feito só com código e música | INEMA.CLUB #Shorts",
-          "canal": "lives3",
-          "canal_nome": "INEMA FTD",
-          "data": "2026-11-06",
-          "formato": "9:16"
         }
       ]
     },

@@ -140,7 +140,8 @@ def candidatos(motor, videos, producoes):
 
 def escolher(motor, cands, todos):
     por_id = {r["video_id"]: r for r in todos}
-    escolhidos = [por_id[i] for i in motor.get("fixar") or [] if i in por_id][:POR_MOTOR]
+    limite = int(motor.get("max_exemplos", POR_MOTOR))
+    escolhidos = [por_id[i] for i in motor.get("fixar") or [] if i in por_id][:limite]
     fmt_motor = motor.get("formato", "")
 
     def ja(r):
@@ -160,7 +161,7 @@ def escolher(motor, cands, todos):
     ]
     for teste in passes:
         for r in cands:
-            if len(escolhidos) >= POR_MOTOR:
+            if len(escolhidos) >= limite:
                 break
             if not ja(r) and teste(r):
                 escolhidos.append(r)
@@ -204,7 +205,7 @@ def main():
     motores = []
     for m in cat["motores"]:
         if sem_historico:
-            saida = {k: v for k, v in m.items() if k not in ("regras", "excluir", "excluir_titulo", "fixar", "nota_regras")}
+            saida = {k: v for k, v in m.items() if k not in ("regras", "excluir", "excluir_titulo", "fixar", "nota_regras", "max_exemplos")}
             saida["exemplos"] = anteriores.get(m["id"], [])
             motores.append(saida)
             print(f"{m['id']:22s} mantidos {len(saida['exemplos'])} exemplos")
@@ -222,7 +223,7 @@ def main():
                 "data": (r.get("data") or "")[:10],
                 "formato": formato_do_video(r, m.get("formato", "")),
             })
-        saida = {k: v for k, v in m.items() if k not in ("regras", "excluir", "excluir_titulo", "fixar", "nota_regras")}
+        saida = {k: v for k, v in m.items() if k not in ("regras", "excluir", "excluir_titulo", "fixar", "nota_regras", "max_exemplos")}
         saida["exemplos"] = ex
         motores.append(saida)
         print(f"{m['id']:22s} {len(cands):4d} candidatos -> {len(ex)} exemplos")

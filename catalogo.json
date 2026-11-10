@@ -10,7 +10,6 @@
     "lives8": {"nome": "Inema Vibe", "url": "https://www.youtube.com/channel/UCJxL11aomXJiBZga-JXylgQ"},
     "lives10": {"nome": "Eventos Extremos INEMA", "url": "https://www.youtube.com/@eventosextremos-inema"},
     "lives11": {"nome": "INEMA Futuros", "url": "https://www.youtube.com/channel/UCx3T2Ltl8-gsiIytjNZ306w"},
-    "lives12": {"nome": "Saúde Diária", "url": "https://www.youtube.com/@InemaPro"},
     "lives24": {"nome": "Inema Club24", "url": "https://www.youtube.com/channel/UC3vxpzIJyPl2WraCBCZ07JA"},
     "aventuras": {"nome": "Aventuras INEMA", "url": "https://www.youtube.com/@aventurasinema"},
     "espanhol": {"nome": "Inema Espanhol", "url": "https://www.youtube.com/@inemaespanhol"}
@@ -97,7 +96,9 @@
       "formato": "9:16", "avatar": "Sim — avatar do Nei (HeyGen)",
       "acionamento": "Terminal (/reel7etapas) — substituído pelo r7ex",
       "repo": "https://github.com/inematds/reel7etapas",
-      "regras": {"origem": ["/reel7etapas/edicoes/"]}
+      "regras": {"origem": ["/reel7etapas/edicoes/"]},
+      "fixar": ["xpDV5qQe5oE"], "max_exemplos": 1,
+      "nota_exemplos": "Motor antigo: o exemplo mostra o padrão anterior, que levou ao r7ex. Para ver o formato atual, veja os exemplos do r7ex."
     },
     {
       "id": "traducao", "grupo": "explicativos", "emoji": "🌎",
@@ -119,7 +120,7 @@
       "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
       "acionamento": "Timer: segunda a sexta 02:00, balanço no sábado",
       "repo": "https://github.com/inematds/finviral",
-      "regras": {"origem": ["/finviral/"]}
+      "regras": {"origem": ["/finviral/"], "so_canais": ["lives2"]}
     },
     {
       "id": "saudeviral", "grupo": "radares", "emoji": "🩺",
@@ -129,7 +130,7 @@
       "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
       "acionamento": "Timer: segunda a sexta 05:00, balanço no sábado",
       "repo": "https://github.com/inematds/saudeviral",
-      "regras": {"origem": ["/saudeviral/"]}
+      "regras": {"origem": ["/saudeviral/"], "so_canais": ["lives2"]}
     },
     {
       "id": "advviral", "grupo": "radares", "emoji": "⚖️",
@@ -139,7 +140,7 @@
       "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
       "acionamento": "Timer: segunda a sexta 08:00, balanço no sábado",
       "repo": "https://github.com/inematds/advviral",
-      "regras": {"origem": ["/advviral/"]}
+      "regras": {"origem": ["/advviral/"], "so_canais": ["lives2"]}
     },
     {
       "id": "futviral", "grupo": "radares", "emoji": "⚽",
@@ -149,7 +150,7 @@
       "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
       "acionamento": "Timer: gera às 9h, publica ao meio-dia",
       "repo": "https://github.com/inematds/futviral",
-      "regras": {"origem": ["/futviral/"]}
+      "regras": {"origem": ["/futviral/"], "so_canais": ["lives24"]}
     },
     {
       "id": "contaviral", "grupo": "radares", "emoji": "🧾",
@@ -159,7 +160,7 @@
       "formato": "9:16 diário + 16:9 longo no fim de semana", "avatar": "Sim — Nei comentando (HeyGen)",
       "acionamento": "Timer: gera às 10h, publica às 13h",
       "repo": "https://github.com/inematds/contaviral",
-      "regras": {"origem": ["/contaviral/"]}
+      "regras": {"origem": ["/contaviral/"], "so_canais": ["lives2"]}
     },
     {
       "id": "eventosextremospub", "grupo": "automaticos", "emoji": "🌪️",
@@ -175,7 +176,7 @@
       "id": "vigia-canal", "grupo": "automaticos", "emoji": "👀",
       "nome": "Vigia de canal",
       "oque": "Todo dia olha um canal de referência; se houver vídeo novo, faz um explicavideo inspirado no conteúdo, na voz do Nei, e publica direto. Sem vídeo novo, não faz nada, e nunca repete um vídeo.",
-      "serve": "Explicativos automáticos sobre agentes e automação com IA.",
+      "serve": "Explicativos automáticos, sem ninguém pedir, quando sai conteúdo novo na referência.",
       "formato": "16:9 + 9:16 (menos de 2 min)", "avatar": "Sim — avatar e voz do Nei",
       "acionamento": "Timer diário às 14h",
       "repo": null,
@@ -220,7 +221,8 @@
       "formato": "16:9 e 9:16 do mesmo projeto", "avatar": "Não (rosto opcional, até meia tela)",
       "acionamento": "Terminal (skill no Claude Code ou Codex)",
       "repo": "https://github.com/inematds/video-codigo",
-      "regras": {"origem": ["/video-codigo/"]}
+      "regras": {"origem": ["/video-codigo/"]},
+      "excluir": ["tkT2I6nrMAk", "Ln1HCqzgVr8", "IJ-qZQ1drBc", "3JmREUS97-o"]
     },
     {
       "id": "reel-ciencia-3d", "grupo": "codigo", "emoji": "🪐",
