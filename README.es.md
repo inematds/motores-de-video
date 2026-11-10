@@ -348,7 +348,7 @@ Suite de voz con IA local que todos los motores usan por debajo: descarga videos
 4. ⚙️ El mismo comando ejecuta `python3 gerar.py`, que vuelve a generar `README.md`, `README.en.md`, `README.es.md` y `guia/index.html`, `guia/en/`, `guia/es/` a partir de `motores.json`.
 5. 🧠 Revisa la página y el README; `git push`. GitHub Pages (Actions) publica desde la rama `main`.
 
-Los ejemplos no se vuelven a revisar en YouTube: el script solo lee archivos locales. Los videos rechazados o reemplazados se agregan a `excluir` en `catalogo.json`.
+Fuera de la máquina que publica los videos no existe el historial de yt-pubx: el script avisa, mantiene los ejemplos que ya están en `motores.json` y solo aplica los textos nuevos. Los ejemplos no se vuelven a verificar en YouTube: el script solo lee archivos locales. Un video rechazado o reemplazado se agrega a `excluir` en `catalogo.json`.
 
 ## Archivos
 

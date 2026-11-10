@@ -34,13 +34,15 @@
       ["Skill", "Pacote de instruções que ensina o Claude Code (ou o Codex) a fazer um tipo de trabalho."],
       ["Tradutor central", "O comando do INEMA que faz todas as traduções pela assinatura, sem API paga."],
       ["Histórico de publicações", "O registro que a ferramenta de publicação no YouTube (yt-pubx) grava a cada vídeo enviado."],
+      ["Terminal e agente", "Terminal é a janela de comandos do computador; agente é a IA (Claude Code ou Codex) que roda nela e executa o motor quando você pede."],
+      ["Canais INEMA TDS, FTD, TIA, Tec…", "Os canais do INEMA no YouTube; cada motor publica no canal do assunto (tecnologia, finanças, clima, esportes, aventuras)."],
       ["INEMA.CLUB e PRO", "INEMA.CLUB é o portal gratuito de cursos e projetos do INEMA; PRO é a área com o catálogo e a busca completos."]
     ],
     "p3_t": "Atualiza por script",
     "p3_x": "Um comando relê o histórico e regrava a lista de exemplos, o README e esta página.",
     "esc_chip": "Qual usar",
     "esc_h2": "Que vídeo você quer fazer?",
-    "esc_sub": "Um atalho para achar o motor certo. Os detalhes estão nos cartões abaixo.",
+    "esc_sub": "Um atalho para achar o motor certo. Os motores rodam na máquina do INEMA com o avatar do Nei; para adaptar um deles ao seu caso, abra o repositório do motor no cartão.",
     "esc": [
       ["Explicar um assunto ou um projeto, com o avatar", "explicavideos"],
       ["Refazer em português um bom vídeo que você viu", "refazvideo"],
@@ -51,7 +53,7 @@
       ["Vídeo sem câmera, escrito em código", "video-codigo"],
       ["Explicativo horizontal sem aparecer", "video-sem-rosto"],
       ["O mesmo vídeo em inglês ou espanhol", "traducao"],
-      ["Um vídeo diário e automático sobre um tema", "finviral"]
+      ["Vídeo diário automático de finanças (há radares de saúde, direito, futebol e contabilidade)", "finviral"]
     ],
     "mot_chip": "Motores",
     "mot_h2": "Os {n} motores, por tipo",
@@ -99,7 +101,7 @@
       ["⚙️", "O mesmo comando roda `python3 gerar.py`, que regrava `README.md`, `README.en.md`, `README.es.md` e `guia/index.html`, `guia/en/`, `guia/es/` a partir do `motores.json`."],
       ["🧠", "Conferir a página e o README; `git push`. O GitHub Pages (Actions) publica a partir da branch `main`."]
     ],
-    "processo_nota": "Os exemplos não são reconferidos no YouTube: o script só lê arquivos locais. Vídeo reprovado ou trocado entra em `excluir` no `catalogo.json`.",
+    "processo_nota": "Fora da máquina que publica os vídeos não existe o histórico do yt-pubx: o script avisa, mantém os exemplos que já estão no `motores.json` e só aplica os textos novos. Os exemplos não são reconferidos no YouTube: o script só lê arquivos locais. Vídeo reprovado ou trocado entra em `excluir` no `catalogo.json`.",
     "h_arquivos": "Arquivos",
     "arquivos": [
       ["catalogo.json", "fonte editada à mão: textos dos motores, canais, regras de identificação"],

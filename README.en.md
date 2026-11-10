@@ -348,7 +348,7 @@ A local AI voice suite used behind the scenes by all the engines: downloads vide
 4. ⚙️ The same command runs `python3 gerar.py`, which regenerates `README.md`, `README.en.md`, `README.es.md`, `guia/index.html`, `guia/en/`, and `guia/es/` from `motores.json`.
 5. 🧠 Check the page and README; `git push`. GitHub Pages (Actions) publishes from the `main` branch.
 
-The examples are not checked again on YouTube: the script only reads local files. Add a rejected or replaced video to `excluir` in `catalogo.json`.
+Outside the machine that publishes the videos, there is no yt-pubx history: the script gives a warning, keeps the examples already in `motores.json`, and applies only the new text. The examples are not checked again on YouTube: the script only reads local files. A rejected or replaced video goes in `excluir` in `catalogo.json`.
 
 ## Files
 

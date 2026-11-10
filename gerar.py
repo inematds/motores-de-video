@@ -158,7 +158,7 @@ CSS = """
   .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
   .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
   @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 16px} .wrap{padding:0 16px}}
-  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section{padding:62px 0;border-bottom:1px solid var(--line);scroll-margin-top:64px}
   section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
   section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
   .grid{display:grid;gap:16px}
