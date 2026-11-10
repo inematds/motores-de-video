@@ -116,7 +116,7 @@ Monta reels ilustrados em azul-marinho a partir de um roteiro.json: gera a voz n
 - **Exemplos publicados:**
   - [Você paga 200 dólares. A IA custa até 5 mil. #shorts](https://www.youtube.com/watch?v=UKqxVXTDVfI) — INEMA TDS, 05/11/2026, 9:16
   - [E se a China fechar a torneira da IA grátis? #shorts](https://www.youtube.com/watch?v=78O5l2Coiv4) — INEMA TDS, 05/11/2026, 9:16
-- Só 2 exemplo(s) identificado(s) no histórico.
+- Por enquanto, só 2 exemplos encontrados no histórico.
 
 #### 7️⃣ reel7etapas (antecessor do r7ex)
 
@@ -204,7 +204,7 @@ Resumo do que os 10 maiores canais de contabilidade e tributos disseram: leis e 
   - [CBS a 11,34%? A alíquota que assustou e o que mais mudou na semana](https://www.youtube.com/watch?v=noBpqjKgdNQ) — INEMA TIA, 08/11/2026, 9:16
   - [CBS de 11,34%, inflação e perdão do MEI: a semana contábil explicada](https://www.youtube.com/watch?v=qsYlEy48vaY) — INEMA TIA, 08/11/2026, 16:9
 
-### Outras linhas automáticas
+### Outras linhas e séries
 
 #### 🌪️ eventosextremospub (clima)
 

@@ -71,7 +71,7 @@ def pedir(lang, lote):
         "É a página que explica os motores de vídeo do INEMA (inema.club), um projeto educativo de IA. "
         "Regras: devolva SÓ o JSON, com exatamente as mesmas chaves; não traduza nomes de projeto, "
         "nomes de arquivo, comandos, nomes de canal, siglas (INMET, IBGE, MEI, CBS, IBS), nem o que está "
-        "entre crases; mantenha {n}, {data}, {k}, {url} e as tags HTML iguais; mantenha 16:9, 9:16 e horários; "
+        "entre crases; mantenha {n}, {data}, {k}, {url}, {total} e as tags HTML iguais; mantenha 16:9, 9:16 e horários; "
         "tom simples e direto, frases curtas.\n\n" + corpo
     )
     r = subprocess.run(["inema-traduz"], input=pedido, capture_output=True, text=True, timeout=900)

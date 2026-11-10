@@ -23,7 +23,19 @@
     "p1_t": "Um índice, não um motor",
     "p1_x": "O que cada motor faz, em linguagem simples, com formato, avatar e acionamento.",
     "p2_t": "Até 3 exemplos reais",
-    "p2_x": "Vídeos públicos, recentes e variados, tirados do histórico de publicações.",
+    "p2_x": "Vídeos públicos, recentes e variados, tirados do histórico de publicações: {total} vídeos de exemplo no total.",
+    "termos_t": "Palavras que aparecem nos cartões",
+    "termos": [
+      ["Nei", "Nei Maldaner, criador do INEMA. O avatar dele (uma versão digital que fala o roteiro) apresenta a maioria dos vídeos."],
+      ["HeyGen", "Serviço que gera o vídeo do avatar falando. O INEMA usa o estúdio do site, pela assinatura."],
+      ["inemaccbot", "Bot do INEMA no Telegram que dispara alguns motores com um comando, como /r7ex ou /explicavideo."],
+      ["Timer", "Agendamento automático no computador que produz os vídeos: o motor roda sozinho no horário marcado."],
+      ["Fila", "Lista de vídeos prontos que são publicados aos poucos, um de cada vez, no horário certo."],
+      ["Skill", "Pacote de instruções que ensina o Claude Code (ou o Codex) a fazer um tipo de trabalho."],
+      ["Tradutor central", "O comando do INEMA que faz todas as traduções pela assinatura, sem API paga."],
+      ["Histórico de publicações", "O registro que a ferramenta de publicação no YouTube (yt-pubx) grava a cada vídeo enviado."],
+      ["INEMA.CLUB e PRO", "INEMA.CLUB é o portal gratuito de cursos e projetos do INEMA; PRO é a área com o catálogo e a busca completos."]
+    ],
     "p3_t": "Atualiza por script",
     "p3_x": "Um comando relê o histórico e regrava a lista de exemplos, o README e esta página.",
     "esc_chip": "Qual usar",
@@ -38,7 +50,8 @@
       ["Reel ilustrado, sem avatar gravado", "rtexjp"],
       ["Vídeo sem câmera, escrito em código", "video-codigo"],
       ["Explicativo horizontal sem aparecer", "video-sem-rosto"],
-      ["O mesmo vídeo em inglês ou espanhol", "traducao"]
+      ["O mesmo vídeo em inglês ou espanhol", "traducao"],
+      ["Um vídeo diário e automático sobre um tema", "finviral"]
     ],
     "mot_chip": "Motores",
     "mot_h2": "Os {n} motores, por tipo",
@@ -53,20 +66,20 @@
     "ver_repo": "ver no GitHub",
     "l_ex": "Exemplos publicados",
     "sem_ex": "Sem exemplo publicado no histórico.",
-    "menos_ex": "Só {k} exemplo(s) identificado(s) no histórico.",
+    "menos_ex": "Por enquanto, só {k} exemplos encontrados no histórico.",
     "fluxo_chip": "Como funciona",
     "fluxo_h2": "De onde vêm os dados",
     "fluxo_sub": "O texto de cada motor é escrito à mão; os exemplos saem de um script que só lê arquivos locais.",
     "fluxo": ["catalogo.json", "atualizar-exemplos.py", "motores.json", "gerar.py", "README + guia PT/EN/ES", "git push", "GitHub Pages"],
-    "guia_chip": "Atualizar o índice · passo a passo",
+    "guia_chip": "Para quem mantém o índice · passo a passo",
     "guia_h2": "Como manter esta página em dia",
-    "guia_sub": "Os comandos rodam na máquina que publica os vídeos, onde está o histórico de publicações. Fora dela o script avisa e mantém o motores.json como está.",
+    "guia_sub": "Para só ler a página, não precisa instalar nada. Estes passos são para quem mantém o índice. Os exemplos novos só aparecem na máquina que publica os vídeos, onde fica o histórico de publicações; em outra máquina o script mantém os exemplos que já estão no motores.json e regera a página com os textos novos.",
     "passos": [
       ["Baixe o repositório", "Precisa de Python 3 e git. O ffprobe (do FFmpeg) é opcional: ajuda a descobrir se cada vídeo é 16:9 ou 9:16.", "git clone https://github.com/inematds/motores-de-video\ncd motores-de-video"],
       ["Motor novo? Descreva no catalogo.json", "Acrescente o motor com o texto em português e a regra que identifica os vídeos dele (pasta de origem ou canal). Use \"excluir\" para tirar um vídeo e \"fixar\" para escolher um.", "\"regras\": {\"origem\": [\"/meu-motor/edicoes/\"]}"],
-      ["Traduza só o que é novo", "Os textos em inglês e espanhol ficam em i18n/. O script chama o tradutor central do INEMA (inema-traduz) só para as chaves que faltam.", "python3 traduzir.py"],
+      ["Traduza só o que é novo", "Os textos em inglês e espanhol ficam em i18n/en.json e i18n/es.json. O script usa o tradutor central do INEMA (o comando inema-traduz, que só existe na máquina do INEMA) para as chaves que faltam. Sem ele, escreva a tradução à mão nesses dois arquivos.", "python3 traduzir.py"],
       ["Releia o histórico e gere tudo", "Escolhe até 3 vídeos públicos, recentes e variados por motor, grava o motores.json e regrava os 3 READMEs e as 3 páginas.", "python3 atualizar-exemplos.py"],
-      ["Publique", "Confira a página e envie. O GitHub Pages publica sozinho a partir da branch main.", "git add -A && git commit -m \"exemplos atualizados\" && git push"]
+      ["Publique", "Confira a página e o que mudou, e envie. O GitHub Pages publica sozinho a partir da branch main.", "git status\ngit add -A && git commit -m \"exemplos atualizados\" && git push"]
     ],
     "rodape": "Índice dos motores de vídeo",
     "data_fmt": "%d/%m/%Y"

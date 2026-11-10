@@ -116,7 +116,7 @@ Creates illustrated reels in navy blue from a roteiro.json script: generates the
 - **Published examples:**
   - [Você paga 200 dólares. A IA custa até 5 mil. #shorts](https://www.youtube.com/watch?v=UKqxVXTDVfI) — INEMA TDS, 2026-11-05, 9:16
   - [E se a China fechar a torneira da IA grátis? #shorts](https://www.youtube.com/watch?v=78O5l2Coiv4) — INEMA TDS, 2026-11-05, 9:16
-- Only 2 example(s) found in the history.
+- For now, only 2 examples were found in the history.
 
 #### 7️⃣ reel7etapas (predecessor to r7ex)
 
@@ -204,7 +204,7 @@ Summarizes what the 10 largest accounting and tax channels said: laws and regula
   - [CBS a 11,34%? A alíquota que assustou e o que mais mudou na semana](https://www.youtube.com/watch?v=noBpqjKgdNQ) — INEMA TIA, 2026-11-08, 9:16
   - [CBS de 11,34%, inflação e perdão do MEI: a semana contábil explicada](https://www.youtube.com/watch?v=qsYlEy48vaY) — INEMA TIA, 2026-11-08, 16:9
 
-### Other automated formats
+### Other lines and series
 
 #### 🌪️ eventosextremospub (weather)
 

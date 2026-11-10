@@ -19,7 +19,7 @@
     {"id": "explicativos", "nome": "Explicativos com avatar"},
     {"id": "reels", "nome": "Reels virais 9:16"},
     {"id": "radares", "nome": "Radares diários automáticos"},
-    {"id": "automaticos", "nome": "Outras linhas automáticas"},
+    {"id": "automaticos", "nome": "Outras linhas e séries"},
     {"id": "codigo", "nome": "Vídeo feito em código (sem câmera)"},
     {"id": "apoio", "nome": "Apoio"}
   ],

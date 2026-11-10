@@ -186,15 +186,29 @@ def main():
                 m.setdefault("regras", {}).setdefault(k, [])
                 m["regras"][k] = list(m["regras"][k]) + list(v)
     destino = os.path.join(AQUI, "motores.json")
-    if not os.path.exists(a.historico):
-        print(f"histórico não encontrado ({a.historico}); motores.json mantido como está.")
-        return 0
-
-    videos = ler_historico(a.historico)
-    producoes = ler_producoes(a.producoes)
+    sem_historico = not os.path.exists(a.historico)
+    anteriores, data_anterior = {}, None
+    if os.path.exists(destino):
+        velho = json.load(open(destino, encoding="utf-8"))
+        anteriores = {m["id"]: m.get("exemplos", []) for m in velho.get("motores", [])}
+        data_anterior = velho.get("gerado_em")
+    if sem_historico:
+        print(f"aviso: histórico não encontrado ({a.historico}).")
+        print("  Os textos do catalogo.json serão aplicados; os exemplos ficam os que já estavam no motores.json")
+        print("  (motor novo fica sem exemplo até rodar na máquina que publica os vídeos).")
+        videos, producoes = [], {}
+    else:
+        videos = ler_historico(a.historico)
+        producoes = ler_producoes(a.producoes)
     canais = cat.get("canais", {})
     motores = []
     for m in cat["motores"]:
+        if sem_historico:
+            saida = {k: v for k, v in m.items() if k not in ("regras", "excluir", "excluir_titulo", "fixar", "nota_regras")}
+            saida["exemplos"] = anteriores.get(m["id"], [])
+            motores.append(saida)
+            print(f"{m['id']:22s} mantidos {len(saida['exemplos'])} exemplos")
+            continue
         cands = candidatos(m, videos, producoes)
         ex = []
         for r in escolher(m, cands, videos):
@@ -214,7 +228,7 @@ def main():
         print(f"{m['id']:22s} {len(cands):4d} candidatos -> {len(ex)} exemplos")
 
     out = {
-        "gerado_em": datetime.now().strftime("%Y-%m-%d"),
+        "gerado_em": (data_anterior or datetime.now().strftime("%Y-%m-%d")) if sem_historico else datetime.now().strftime("%Y-%m-%d"),
         "fonte_exemplos": "histórico de publicações do yt-pubx (só vídeos públicos, não reconferidos no ar)",
         "canais": canais,
         "grupos": cat["grupos"],

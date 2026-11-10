@@ -168,6 +168,12 @@ CSS = """
   .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
   .card h3{font-size:1.05rem;margin-bottom:.4em}
   .card p{color:var(--mut);font-size:.95rem;margin:0}
+  .termos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 18px;margin:0}
+  @media(max-width:820px){.termos{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.termos{grid-template-columns:1fr}}
+  .termos div{border-left:2px solid var(--line);padding:2px 0 2px 12px;min-width:0}
+  .termos dt{font-family:Sora;font-weight:600;font-size:.92rem}
+  .termos dd{margin:.15em 0 0;color:var(--mut);font-size:.9rem}
   .esc{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
   @media(max-width:820px){.esc{grid-template-columns:1fr 1fr}}
   @media(max-width:540px){.esc{grid-template-columns:1fr}}
@@ -277,6 +283,7 @@ def guia(lang, dados, pt, trad):
         passos += (f'<div class="step"><div class="b">{i}</div><div><h3>{e(tit)}</h3><p>{e(txt)}</p>'
                    f'<pre><span class="k">{e(cmd)}</span></pre></div></div>')
     ex_total = sum(len(m.get("exemplos") or []) for m in dados["motores"])
+    termos = "".join(f"<div><dt>{e(t)}</dt><dd>{e(d)}</dd></div>" for t, d in T.lista("ui.termos"))
     return f"""<!DOCTYPE html>
 <html lang="{html_lang}">
 <head>
@@ -338,9 +345,11 @@ def guia(lang, dados, pt, trad):
   <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><img src="{pre}assets/banner-grade{sufixo}.jpg" alt="{e(T("ui.grade_alt"))}" loading="lazy" style="width:100%;height:auto;display:block" width="1400" height="788"></figure>
   <div class="grid g3">
     <div class="card"><h3>🗂️ {e(T("ui.p1_t"))}</h3><p>{e(T("ui.p1_x"))}</p></div>
-    <div class="card"><h3>▶️ {e(T("ui.p2_t"))}</h3><p>{e(T("ui.p2_x"))} ({ex_total})</p></div>
+    <div class="card"><h3>▶️ {e(T("ui.p2_t"))}</h3><p>{e(T("ui.p2_x").replace("{total}", str(ex_total)))}</p></div>
     <div class="card"><h3>🔄 {e(T("ui.p3_t"))}</h3><p>{e(T("ui.p3_x"))}</p></div>
   </div>
+  <h3 style="margin:34px 0 14px;font-size:1.15rem">{e(T("ui.termos_t"))}</h3>
+  <dl class="termos">{termos}</dl>
 </div></section>
 
 <section id="escolher"><div class="wrap">
